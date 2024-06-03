@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Clínica Médica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Clínica Médica</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Principal</a></li>
+                    <li><a href="sobre.html">Sobre a Clínica</a></li>
+                    <li><a href="horario.html">Horário de Atendimento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="content" class="container">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através dos seguintes canais:</p>
+        <ul>
+            <li>Telefone: (00) 1234-0000</li>
+            <li>WhatsApp: (00) 1234-0000</li>
+            <li>Endereço: Rua da Saúde, 123, São Paulo, SP</li>
+        </ul>
+        <h3>Localização</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.451366815965!2d-46.65549898444912!3d-23.563104967799775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c4b34b02b9%3A0xb8f0b5e20f546edf!2sAvenida%20Paulista%2C%201575%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1625563205175!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h3>Formulário de Contato</h3>
+        <form action="envio_formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Contato: (00) 1234-0000 | Endereço: Rua da Saúde, 123, São Paulo, SP</p>
+        </div>
+    </footer>
+</body>
+</html>
